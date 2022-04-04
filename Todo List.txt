@@ -1,0 +1,67 @@
+Prise en main
+	- Compréhension du projet						OK
+	- Documentation nécessaire à propos du projet	50%
+
+Conception
+	- Conception des écrans (maquettes)
+	- Conception (aperçu) de la base de données en mongoDB
+	- Listing de toutes les fonctionnalités à implémenter
+
+Installation
+	- Création de la base de données MongoDB en ligne
+	- Création repo github (1 repo pour le backend et frontend)
+	- Création app Heroku (1 app pour le frontend et 1 app pour le backend)
+	- Déploiement Heroku (lié au repo github)
+
+Developpement par fonctionnalités
+	I. pour le Client : 
+		A- Pages :
+			1. Inscription (Coordonée, tel, login, mot de passe) pour le client : 
+				* Après inscription, l'utilisateur est connecté et peut voir et/ou commander des plats.
+				** Notif : Bienvenue "NOM"
+			2. Connexion (login et mot de passe) pour le client :
+				* si l'utilisateur possède déja un compte sur e-kaly, il peut se connecter et voir et/ou commander des plats.
+				** Notif : Bonjour/Bonsoir "NOM"
+			3. Liste des plats par réstaurant (nom, prix, type [dessert, resistance, entrée, ...])
+				* L'utilisateur peut choisir un réstaurant et voir la liste des plats dispo dans ce restaurant
+				* La liste est paginé
+				* Il devrait y avoir un lien vers détail de chaque plat (Nom, prix, type, photos, description, ingrédients, suggestion même catégorie et/ou même ing) 
+				* Il devrait y avoir un boutton ajouter au panier
+				** Notif Après ajout dans le panier : "NOMBRE" - "NOM DU PLAT" ajouté(s) dans le panier.
+			4. Détails d'un plat
+				* En cliquant sur un plat, l'utilisateur voit les détails concernant ce plat.(Nom, prix, type, photos, description, ingrédients) 
+				* Dans le détails, En bas, il y aurait des suggestions de plats de même catégorie et/ou même ing.
+				* Dans chaque détail il devrait y avoir un bouton ajouter au panier
+				** Notif Après ajout dans le panier : "NOMBRE" - "NOM DU PLAT" ajouté(s) dans le panier.
+			5. Le panier 
+				* Le panier est visible pour tous les utilisateurs connectés ou pas, c'est avant de valider la commande qu'on est obligé de se connecter ou de s'inscrire.
+				* Le panier contient la liste des plats que l'utilisateur a mis dans son panier
+				* Les infos dans le panier se présente comme suit : 1 Photo, Nom, nombres, prix unitaire, et en bas le total
+				* Le bouton commander qui permet de valider la commande des plats dans le panier. Affiche un popup de récap, deux bouton : de confirmation et d'annulation le formulaire pour l'adresse de livraison et un descriptif (obligatoire) du lieu de livraison. Si un utilisateur non connecté clique sur commander, l'outil lui propose de se connecter ou de créer un compte ensuite il sera rediriger vers la page panier + le popup de validation.
+				** Notif Après Commande du panier : Commande éffectuée. Un de nos livreurs vous contactera très prochainement.
+		B- Disposition des pages :
+			1- Au milieu le contenu qui change selon la page à laquelle on est
+			2- A gauche : 
+				* Si on est connecté : 
+					Le profil et les infos de l'utilisateur connecté
+					Le bouton se déconnecter
+				* Si on n'est pas connecté : 
+					Le phrase : "Bienvenue sur esakafo, Votre platforme de commande de plats en ligne sans frais de livraison supllémentaire" suivi des boutons connectez-vous ou inscrivez-vous.
+			3- En haut la liste des pages pour le client :
+				*Liste des plats
+				*Mon Panier
+				*L'icône de deconnexion si on est connecté
+		C- Minimum requirement
+			Pages : A.2, A.3, A.5
+
+	II. pour les restaurants :
+		A- Pages :
+
+
+
+		B- Disposition des pages
+		C- Minimum requirement
+
+Test
+	- Test unitaire si possible
+	- Test IHM / UI/UX
