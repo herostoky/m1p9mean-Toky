@@ -21,7 +21,6 @@ app.get('/users', userController.findAllUser);
 // ========================
 // Listen
 // ========================
-const port = process.env.PORT || 7500;
-app.listen(port, function () {
-    console.log(`listening on ${port}`)
+app.listen((process.env.PORT || 7500), function () {
+    console.log(`listening on ${(process.env.PORT || 7500)}`)
 })
