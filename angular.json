@@ -113,5 +113,8 @@
       }
     }
   },
-  "defaultProject": "esakafo"
+  "defaultProject": "esakafo",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
