@@ -10,7 +10,9 @@ app.get('/*', function(req,res) {
 	res.sendFile(path.join(__dirname+'/dist/esakafo/index.html'));
 });
 
+const portS = (process.env.PORT || 8080);
 // Start the app by listening on the default Heroku port
+console.log("listening on ", portS);
 app.listen(process.env.PORT || 8080);
 
 
