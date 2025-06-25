@@ -113,8 +113,7 @@
       }
     }
   },
-  "defaultProject": "esakafo",
   "cli": {
-    "defaultCollection": "@ngrx/schematics"
+    "analytics": false
   }
 }
