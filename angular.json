@@ -75,20 +75,14 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
-            "production": {
-              "browserTarget": "esakafo:build:production"
-            },
-            "development": {
-              "browserTarget": "esakafo:build:development"
-            }
+            "production": {},
+            "development": {}
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "esakafo:build"
-          }
+          "options": {}
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
@@ -113,8 +107,7 @@
       }
     }
   },
-  "defaultProject": "esakafo",
   "cli": {
-    "defaultCollection": "@ngrx/schematics"
+    "analytics": false
   }
 }
